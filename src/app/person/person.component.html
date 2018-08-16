@@ -1,0 +1,17 @@
+<mat-card class="card" *ngIf="person">
+  <mat-card-header>
+    <div mat-card-avatar>{{ person.popularity }}</div>
+    <mat-card-title>{{ person.name }}</mat-card-title>
+    <mat-card-subtitle>{{ person.known_for_department }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://image.tmdb.org/t/p/w600_and_h900_bestv2{{person.profile_path}}" [alt]="person.name">
+  <mat-card-content>
+    <p>
+      {{ person.biography }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>

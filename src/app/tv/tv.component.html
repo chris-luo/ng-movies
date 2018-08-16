@@ -1,0 +1,17 @@
+<mat-card class="card" *ngIf="tv">
+  <mat-card-header>
+    <div mat-card-avatar>{{ tv.vote_average }}</div>
+    <mat-card-title>{{ tv.name }}</mat-card-title>
+    <mat-card-subtitle>{{ tv.tagline }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://image.tmdb.org/t/p/w600_and_h900_bestv2{{tv.poster_path}}" [alt]="tv.name">
+  <mat-card-content>
+    <p>
+      {{ tv.overview }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
