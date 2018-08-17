@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MovieComponent } from './movie/movie.component';
+import { MovieComponent } from './movies/movie/movie.component';
 import { TVComponent } from './tv/tv.component';
 import { PersonComponent } from './person/person.component';
 import { PopularMoviesComponent } from './movies/popular/popular.component';
