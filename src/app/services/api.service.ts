@@ -23,6 +23,14 @@ export class ApiService {
     });
   }
 
+  getPopularMovies() {
+    return this.http.get<any>(`${environment.apiEP}/movie/popular`, {
+      params: {
+        api_key: environment.apiKey
+      }
+    });
+  }
+
   getTV(id: number) {
     return this.http.get<any>(`${environment.apiEP}/tv/${id}`, {
       params: {

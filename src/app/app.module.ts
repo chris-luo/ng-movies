@@ -6,10 +6,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchModule } from './search/search.module';
 import { ApiService } from './services/api.service';
 import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
 import { MovieModule } from './movie/movie.module';
 import { TvModule } from './tv/tv.module';
 import { PersonModule } from './person/person.module';
+import { CoreModule } from './core/core.module';
+import { PopularMoviesModule } from './movies/popular/popular.module';
 
 @NgModule({
   declarations: [
@@ -20,10 +21,11 @@ import { PersonModule } from './person/person.module';
     BrowserAnimationsModule,
     SearchModule,
     HttpClientModule,
-    AppRoutingModule,
     MovieModule,
     TvModule,
-    PersonModule
+    PersonModule,
+    CoreModule,
+    PopularMoviesModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
