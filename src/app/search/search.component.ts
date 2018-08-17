@@ -11,6 +11,9 @@ import { debounceTime, takeUntil, distinctUntilChanged, map } from 'rxjs/operato
   templateUrl: './search.component.html',
   styles: [
     `
+    form {
+      margin-top: 16px;
+    }
     .input-search {
       width: 100%;
     }
