@@ -31,6 +31,30 @@ export class ApiService {
     });
   }
 
+  getTopRatedMovies() {
+    return this.http.get<any>(`${environment.apiEP}/movie/top_rated`, {
+      params: {
+        api_key: environment.apiKey
+      }
+    });
+  }
+
+  getUpcomingMovies() {
+    return this.http.get<any>(`${environment.apiEP}/movie/upcoming`, {
+      params: {
+        api_key: environment.apiKey
+      }
+    });
+  }
+
+  getNowPlayingMovies() {
+    return this.http.get<any>(`${environment.apiEP}/movie/now_playing`, {
+      params: {
+        api_key: environment.apiKey
+      }
+    });
+  }
+
   getTV(id: number) {
     return this.http.get<any>(`${environment.apiEP}/tv/${id}`, {
       params: {

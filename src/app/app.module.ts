@@ -10,7 +10,7 @@ import { MovieModule } from './movies/movie/movie.module';
 import { TvModule } from './tv/tv.module';
 import { PersonModule } from './person/person.module';
 import { CoreModule } from './core/core.module';
-import { PopularMoviesModule } from './movies/popular/popular.module';
+import { MoviesModule } from './movies/movies.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { PopularMoviesModule } from './movies/popular/popular.module';
     TvModule,
     PersonModule,
     CoreModule,
-    PopularMoviesModule
+    MoviesModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

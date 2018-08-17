@@ -3,12 +3,24 @@ import { RouterModule, Routes } from '@angular/router';
 import { MovieComponent } from './movies/movie/movie.component';
 import { TVComponent } from './tv/tv.component';
 import { PersonComponent } from './person/person.component';
-import { PopularMoviesComponent } from './movies/popular/popular.component';
+import { MoviesComponent } from './movies/movies.component';
 
 const appRoutes: Routes = [
   {
     path: 'movies/popular',
-    component: PopularMoviesComponent
+    component: MoviesComponent
+  },
+  {
+    path: 'movies/top-rated',
+    component: MoviesComponent
+  },
+  {
+    path: 'movies/upcoming',
+    component: MoviesComponent
+  },
+  {
+    path: 'movies/now-playing',
+    component: MoviesComponent
   },
   {
     path: 'movies/:id',
