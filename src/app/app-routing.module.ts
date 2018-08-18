@@ -4,6 +4,7 @@ import { MovieComponent } from './movies/movie/movie.component';
 import { TVComponent } from './tv/tv.component';
 import { PersonComponent } from './person/person.component';
 import { MoviesComponent } from './movies/movies.component';
+import { TVShowComponent } from './tv/show/show.component';
 
 const appRoutes: Routes = [
   {
@@ -27,8 +28,24 @@ const appRoutes: Routes = [
     component: MovieComponent
   },
   {
-    path: 'tv/:id',
+    path: 'tv/popular',
     component: TVComponent
+  },
+  {
+    path: 'tv/top-rated',
+    component: TVComponent
+  },
+  {
+    path: 'tv/on-the-air',
+    component: TVComponent
+  },
+  {
+    path: 'tv/airing-today',
+    component: TVComponent
+  },
+  {
+    path: 'tv/:id',
+    component: TVShowComponent
   },
   {
     path: 'person/:id',

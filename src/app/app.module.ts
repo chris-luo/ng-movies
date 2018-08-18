@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchModule } from './search/search.module';
 import { ApiService } from './services/api.service';
 import { HttpClientModule } from '@angular/common/http';
-import { MovieModule } from './movies/movie/movie.module';
 import { TvModule } from './tv/tv.module';
 import { PersonModule } from './person/person.module';
 import { CoreModule } from './core/core.module';
@@ -21,7 +20,6 @@ import { MoviesModule } from './movies/movies.module';
     BrowserAnimationsModule,
     SearchModule,
     HttpClientModule,
-    MovieModule,
     TvModule,
     PersonModule,
     CoreModule,

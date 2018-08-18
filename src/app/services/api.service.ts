@@ -63,6 +63,38 @@ export class ApiService {
     });
   }
 
+  getPopularShows() {
+    return this.http.get<any>(`${environment.apiEP}/tv/popular`, {
+      params: {
+        api_key: environment.apiKey
+      }
+    });
+  }
+
+  getTopRatedShows() {
+    return this.http.get<any>(`${environment.apiEP}/tv/top_rated`, {
+      params: {
+        api_key: environment.apiKey
+      }
+    });
+  }
+
+  getOnTheAirShows() {
+    return this.http.get<any>(`${environment.apiEP}/tv/on_the_air`, {
+      params: {
+        api_key: environment.apiKey
+      }
+    });
+  }
+
+  getAiringTodayShows() {
+    return this.http.get<any>(`${environment.apiEP}/tv/airing_today`, {
+      params: {
+        api_key: environment.apiKey
+      }
+    });
+  }
+
   getPerson(id: number) {
     return this.http.get<any>(`${environment.apiEP}/person/${id}`, {
       params: {

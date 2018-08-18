@@ -14,9 +14,9 @@ import { Router } from '@angular/router';
       </a>
       <a mat-tab-link
         [matMenuTriggerFor]="menuTV"
-        [routerLink]="movies"
-        routerLinkActive #rla="routerLinkActive"
-        [active]="rla.isActive">
+        [routerLink]="tv"
+        routerLinkActive #rla2="routerLinkActive"
+        [active]="rla2.isActive">
         TV Shows
       </a>
     </nav>
@@ -62,7 +62,7 @@ export class HeaderComponent implements OnInit {
       label: 'Top Rated'
     },
     {
-      path: 'tv/on-tv',
+      path: 'tv/on-the-air',
       label: 'On TV'
     },
     {
